@@ -1,0 +1,228 @@
+<html>
+<head>
+<title>TropicHop</title>
+<style type="text/css">
+
+body
+{
+   margin: 5px;
+}
+
+h2
+{
+   margin-top: 15px;
+   margin-bottom: 0;
+}
+
+dt
+{
+   font-weight: bold;
+}
+
+</style>
+</head>
+<body>
+
+<h1>TropicHop</h1>
+
+<p>TropicHop is a game of real estate market domination set in a tropical
+  island chain. Players compete with each other to travel between the various
+  islands and their ports, buying and consolidating properties along the way.</p>
+
+<h2>Setup</h2>
+
+<p>Each player starts on {start_node} with:</p>
+
+<ul>
+  <li>{initial_cash} Tropicbux</li>
+  <li>{initial_fuel} barrels of rum</li>
+  <li>{initial_fuel_stations} rum stills</li>
+</ul>
+
+<p>The order in which the players play is randomized when the game starts. This
+  game uses the equivalent of two {die_pips}-sided dice.</p>
+
+<h2>The Board</h2>
+
+<dl>
+  <dt>{start_node}</dt>
+  <dd>Home of the TropicHop Island Company. Players that pass
+    {start_node} receive {pass_start_cash} Tropicbux from the Company.
+    Players that land on {start_node} receive {land_on_start_cash} Tropicbux.
+    Fuel is available on {start_node} for {fuel_price_on_start} Tropicbux per
+    barrel.</dd>
+  
+  <dt>Ports</dt>
+  <dd>Ports in the island chain can be docked at. Since traversing the surf takes energy,
+    sailors must consume rum in order to continue their journey.
+    Players charge each other fees for docking at ports that they
+    own. Players may also place stills in order to provide rum to weary
+    travelers.</dd>
+  
+  <dt>Black dots</dt>
+  <dd>The space between islands is very dangerous. Players may never land on
+    these spaces. If a
+    player is circling an island and has not rolled a number high enough to pass the last
+    black dot when leaving the island, the player must continue to circle.</dd>
+  
+  <dt>Freeports</dt>
+  <dd>The Company operates several outposts throughout the island chain.
+    Players that land receive a bonus from the Company.</dd>
+  
+  <dt>Rum Distilleries</dt>
+  <dd>Rum is such a vital resource that entrepreneurs have built distilleries
+    at strategic points in the island chain. Players landing at distilleries may
+    be required to pay a berthing fee, but may purchase rum after doing so.</dd>
+  
+  <dt>Resorts</dt>
+  <dd>There's always good times to be had somewhere in the tropics. Players
+    can purchase controlling shares in resports and then charge other
+    players bed fees when they visit. No rum is available at resorts,
+    though.</dd>
+</dl>
+
+<h2>Property</h2>
+
+<p>Players may purchase ports, distilleries, and resorts that
+  they dock at ({start_node} may never be purchased). Players that dock at an
+  owned property must pay the owner for the privilege. The amount of money
+  increases if the owner owns more properties in the same color group. It never
+  costs anything for a player to dock at a property he or she owns or at a
+  property that belongs to the Company.</p>
+
+<p>Players may sell unwanted properties back to the Company
+  {node_buyback_availability}. Players may sell properties to settle a debt
+  owed to another player. The player receives the full price on the deed, plus
+  {fuel_station_price} Tropicbux, if a still is present.</p>
+
+<h2>Rum and Stills</h2>
+
+<p>Players consume rum every time they leave a port and get underway. If a
+  player is at a port and rolls a number higher than the number of
+  barrels of rum in his or her shi, the player does not move. If the player
+  is at a property owned by another player, he or she must again pay the owner
+  rent for remaining at the property for an extra turn.</p>
+
+<p>Players may refuel at ports on which a still has been
+  placed or at any space dock. If the property is owned, the player pays the
+  owner the price indicated on the deed per barrel of rum. If the player owns
+  multiple properties of the same color, the price goes up. Refueling at a
+  property that is owned by the Company is
+  {fuel_available_on_unowned_node}. When allowed, the price on an unowned
+  property is the lowest price listed on the deed. Players can refuel to a
+  maximum of {maximum_fuel} barrels.</p>
+
+<p>To avoid becoming stuck at a port, players may want to refuel only
+  to {low_fuel} barrels, that being the greatest number that can be rolled that
+  does not result in drawing a Maelstrom card. If a player with {low_fuel} or
+  fewer barrels of rum docks at an owned port that lacks a still, the player
+  may declare the owner negligent and purchase the property
+  for the full price indicated on the deed.</p>
+
+<p>Certain Maelstrom cards also cause the player to consume rum. If a Maelstrom
+  card requires more rum than is on a player's ship, that player immediately
+  loses the game.</p>
+
+<p>Players that start a turn at a port with fewer than {minimum_fuel}
+  barrels of rum may not roll the dice without first refueling to at least
+  {minimum_fuel} barrels. If the player cannot refuel, he or she has become
+  marooned and immediately loses the game.</p>
+
+<p>When on {start_node}, rum is available for {fuel_price_on_start} Tropicbux
+  per barrel.</p>
+
+<p>Players may place a still on a port immediately upon
+  purchasing it or on a subsequent turn. Placing a still when away from
+  the intended port is {can_place_fuel_stations_on_any_node}. Once
+  placed, stills never move, even when the property later changes hands.
+  Stills are worth {fuel_station_price} Tropicbux at all times. They
+  raise the deed price of properties, when present. They can be purchased from
+  the Company {fuel_station_purchase_availability}. They can be sold
+  to the Company {fuel_station_buyback_availability}. They can be
+  sold to the Company to settle a debt owed to another player. They
+  may never be traded between players; however, they <em>are</em> turned over
+  when one player knocks another out of the game.</p>
+
+<p>The Company has a supply of {total_fuel_stations} stills.
+  Players can buy up all remaining stills in order to withhold them from
+  other players. This makes it more likely that other players will run low on
+  rum and possibly become marooned.</p>
+
+<h2>Maelstrom Cards</h2>
+
+<p>When a player rolls {red_shift_roll}, he or she does not move, but instead
+  draws a Maelstrom card and follows the directions shown.</p>
+
+<h2>Cannon Battles</h2>
+
+<p><em>Under the current rules, cannon battles are {laser_battles_allowed}.</em></p>
+
+<p>When allowed by the current rules, players may attack each other with
+  ship-to-ship cannons. Players may attack before refueling and before rolling
+  the dice or after moving, but before paying rent.</p>
+
+<p>Players may attack ships up to {laser_battle_maximum_distance} spaces away,
+  including ships on the same space as the player. Cannons take a lot of effort for sailors to man,
+  and use more effort over greater distances. This consumes rum at the rate of
+  {laser_battle_fuel_cost} barrels per space of distance (plus one, so
+  attacking ships on the same space costs {laser_battle_fuel_cost} barrels).
+  Players can fire at multiple ships on the same space at once for no
+  additional rum cost.</p>
+
+<p>During an attack, the attacker rolls the dice. If the attacker rolls
+  doubles, the shot has hit and damaged the target ship(s). Each player that
+  suffers damage must pay the attacker {laser_battle_damage_cost} Tropicbux for
+  each pip on the dice. If the attacker rolls double {die_pips}, the expertly
+  targeted cannon <em>destroys the ship(s) that it hits</em>. The players,
+  without their ships, immediately surrender their possessions to the attacker
+  and are out of the game. If the attacker does not roll doubles, the shot
+  misses with no ill effects and play continues.</p>
+
+<p>Attacking from {start_node} is {lasers_can_fire_from_start}. Attacking a
+  player who is on {start_node} is {lasers_can_fire_at_start}.</p>
+
+<h2>Bypassing</h2>
+
+<p><em>Under the current rules, bypassing is {bypass_allowed}.</em></p>
+
+<p>When allowed by the current rules, rolling doubles allows the player to have
+  the option of bypassing having to dock, instead rolling and moving
+  again, unless the player is required to draw a Maelstrom card. When rolling
+  doubles, the player collects {bypass_cash} Tropicbux, then moves and uses rum
+  as normal. After moving, the player can either dock as normal or roll
+  again without having to pay any rent or fees. The second roll costs the
+  player no rum. Players may not bypass spaces between islands. When allowed by the
+  current rules, players may fire cannons while bypassing.</p>
+
+<h2>Winning the Game</h2>
+
+<p>The last player standing is the winner. Alternately, players can agree on a
+  time limit. In time limit games, the player with the greatest net worth is
+  the winner.</p>
+
+<h2>Losing the Game</h2>
+
+<p>Players can be eliminated from the game in the following ways:</p>
+
+<ul>
+  <li>Declaring bankruptcy when faced with an insurmountable debt.</li>
+  <li>Becoming marooned by attempting to roll the dice while at a port
+    with fewer than {minimum_fuel} barrels of rum.</li>
+  <li>Drawing a Maelstrom card that requires the use of more rum than the
+    player has available.</li>
+  <li>Being destroyed by an expertly targeted cannon shot, in games where cannon
+    battles are allowed.</li>
+</ul>
+
+<p>When declaring bankruptcy or being destroyed by cannon, everything the player
+  owned becomes the property of the creditor or the attacker. When running out
+  of rum, everything the player owned becomes the property of the Company.
+  All stills that were placed on properties remain where they are.</p>
+
+<h2>License</h2>
+
+<p>This software is licensed under the GPL. Please see LICENSE.txt for more
+  details.</p>
+
+</body>
+</html>

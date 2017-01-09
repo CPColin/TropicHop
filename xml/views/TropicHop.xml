@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE board SYSTEM "View.dtd">
+<view id="TropicHop">
+  <boardImage>/images/tropichop.png</boardImage>
+
+  <nodeView for="Start">
+    <displayName>Start</displayName>
+    <coords>114 787</coords>
+  </nodeView>
+  <nodeView for="West_A">
+    <displayName>West A</displayName>
+    <coords>117 936</coords>
+  </nodeView>
+  <nodeView for="West_Freeport">
+    <displayName>West Freeport</displayName>
+    <coords>144 1078</coords>
+  </nodeView>
+  <nodeView for="West_B">
+    <displayName>West B</displayName>
+    <coords>204 1181</coords>
+  </nodeView>
+  <nodeView for="West_C">
+    <displayName>West C</displayName>
+    <coords>377 1203</coords>
+  </nodeView>
+  <nodeView for="West_D">
+    <displayName>West D</displayName>
+    <coords>457 1104</coords>
+  </nodeView>
+  <nodeView for="West_E">
+    <displayName>West E</displayName>
+    <coords>611 1050</coords>
+  </nodeView>
+  <nodeView for="West_Resort">
+    <displayName>West Resort</displayName>
+    <coords>644 913</coords>
+  </nodeView>
+  <nodeView for="West_Rum">
+    <displayName>West Rum</displayName>
+    <coords>591 778</coords>
+  </nodeView>
+  <nodeView for="West_F">
+    <displayName>West F</displayName>
+    <coords>509 660</coords>
+  </nodeView>
+  <nodeView for="West_G">
+    <displayName>West G</displayName>
+    <coords>358 580</coords>
+  </nodeView>
+  <nodeView for="West_H">
+    <displayName>West H</displayName>
+    <coords>201 634</coords>
+  </nodeView>
+  <nodeView for="West_To_East_1">
+    <displayName>West to East 1</displayName>
+    <coords>756 947</coords>
+  </nodeView>
+  <nodeView for="West_To_East_2">
+    <displayName>West to East 2</displayName>
+    <coords>850 891</coords>
+  </nodeView>
+  <nodeView for="West_To_East_3">
+    <displayName>West to East 3</displayName>
+    <coords>951 858</coords>
+  </nodeView>
+  <nodeView for="West_To_East_4">
+    <displayName>West to East 4</displayName>
+    <coords>1052 812</coords>
+  </nodeView>
+  <nodeView for="East_A">
+    <displayName>East A</displayName>
+    <coords>1114 726</coords>
+  </nodeView>
+  <nodeView for="East_Resort">
+    <displayName>East Resort</displayName>
+    <coords>1114 584</coords>
+  </nodeView>
+  <nodeView for="East_B">
+    <displayName>East B</displayName>
+    <coords>1096 494</coords>
+  </nodeView>
+  <nodeView for="East_C">
+    <displayName>East C</displayName>
+    <coords>1058 370</coords>
+  </nodeView>
+  <nodeView for="East_D">
+    <displayName>Start</displayName>
+    <coords>1134 279</coords>
+  </nodeView>
+  <nodeView for="East_E">
+    <displayName>East E</displayName>
+    <coords>1067 171</coords>
+  </nodeView>
+  <nodeView for="East_F">
+    <displayName>East F</displayName>
+    <coords>960 118</coords>
+  </nodeView>
+  <nodeView for="East_G">
+    <displayName>East G</displayName>
+    <coords>835 158</coords>
+  </nodeView>
+  <nodeView for="East_Freeport">
+    <displayName>East Freeport</displayName>
+    <coords>793 262</coords>
+  </nodeView>
+  <nodeView for="East_H">
+    <displayName>East H</displayName>
+    <coords>777 381</coords>
+  </nodeView>
+  <nodeView for="East_I">
+    <displayName>East I</displayName>
+    <coords>764 482</coords>
+  </nodeView>
+  <nodeView for="East_Rum">
+    <displayName>East Rum</displayName>
+    <coords>799 595</coords>
+  </nodeView>
+  <nodeView for="East_J">
+    <displayName>East J</displayName>
+    <coords>873 659</coords>
+  </nodeView>
+  <nodeView for="East_K">
+    <displayName>East K</displayName>
+    <coords>958 726</coords>
+  </nodeView>
+  <nodeView for="East_To_West_1">
+    <displayName>East to West 1</displayName>
+    <coords>684 525</coords>
+  </nodeView>
+  <nodeView for="East_To_West_2">
+    <displayName>East to West 2</displayName>
+    <coords>584 545</coords>
+  </nodeView>
+  <nodeView for="East_To_West_3">
+    <displayName>East to West 3</displayName>
+    <coords>478 559</coords>
+  </nodeView>
+
+  <deedGroupView for="West">
+    <displayName>West Island</displayName>
+    <displayColor>255 255 0</displayColor>
+  </deedGroupView>
+  <deedGroupView for="East">
+    <displayName>East Island</displayName>
+    <displayColor>0 0 255</displayColor>
+  </deedGroupView>
+  <deedGroupView for="Distilleries">
+    <displayName>Distillieries</displayName>
+    <displayColor>192 192 192</displayColor>
+  </deedGroupView>
+  <deedGroupView for="Resorts">
+    <displayName>Resorts</displayName>
+    <displayColor>96 96 96</displayColor>
+  </deedGroupView>
+
+  <cardView for="Discover_Treasure">
+    <displayName>Discover Treasure</displayName>
+  </cardView>
+  <cardView for="Discover_Wonder">
+    <displayName>Discover an Ancient Wonder</displayName>
+  </cardView>
+  <cardView for="Doldrums">
+    <displayName>Doldrums</displayName>
+  </cardView>
+  <cardView for="Gale_2">
+    <displayName>Gale 2</displayName>
+  </cardView>
+  <cardView for="Gale_3">
+    <displayName>Gale 3</displayName>
+  </cardView>
+  <cardView for="Gale_4">
+    <displayName>Gale 4</displayName>
+  </cardView>
+  <cardView for="Lose_Dispute_League">
+    <displayName>You LOSE a dispute with the TropicHop Island Company</displayName>
+  </cardView>
+  <cardView for="Win_Dispute_Player">
+    <displayName>You WIN a dispute with any player of your choice</displayName>
+  </cardView>
+  <cardView for="Win_Dispute_League">
+    <displayName>You WIN a dispute with the TropicHop Island Company</displayName>
+  </cardView>
+
+</view>

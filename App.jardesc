@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<jardesc>
+    <jar path="/home/cbartolo/Desktop/tropichop-0.7.6.jar"/>
+    <options buildIfNeeded="true" compress="true" descriptionLocation="/TropicHop/App.jardesc" exportErrors="true" exportWarnings="true" includeDirectoryEntries="false" overwrite="true" saveDescription="true" storeRefactorings="false" useSourceFolders="false"/>
+    <storedRefactorings deprecationInfo="true" structuralOnly="false"/>
+    <selectedProjects/>
+    <manifest generateManifest="true" mainClassHandleIdentifier="=TropicHop/src&lt;com.crappycomic.tropichop.main{Main.java[Main" manifestLocation="" manifestVersion="1.0" reuseManifest="false" saveManifest="false" usesManifest="true">
+        <sealing sealJar="false">
+            <packagesToSeal/>
+            <packagesToUnSeal/>
+        </sealing>
+    </manifest>
+    <selectedElements exportClassFiles="true" exportJavaFiles="false" exportOutputFolder="false">
+        <folder path="/TropicHop/images"/>
+        <file path="/TropicHop/README.txt"/>
+        <javaElement handleIdentifier="=TropicHop/src"/>
+        <file path="/TropicHop/LICENSE.txt"/>
+        <file path="/TropicHop/gpl.txt"/>
+        <folder path="/TropicHop/xml"/>
+    </selectedElements>
+</jardesc>

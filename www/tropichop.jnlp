@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE jnlp PUBLIC "-//Sun Microsystems, Inc//DTD JNLP Descriptor 6.0//EN" "http://java.sun.com/dtd/JNLP-6.0.dtd">
+<jnlp spec="1.8+" codebase="http://www.crappycomic.com/tropichop" href="tropichop.jnlp">
+  <information>
+    <title>TropicHop</title>
+    <vendor>Colin Bartolome</vendor>
+  </information>
+  <security>
+    <all-permissions />
+  </security>
+  <resources>
+    <jar href="tropichop.jar" />
+    <j2se version="1.8+" />
+  </resources>
+  <application-desc main-class="com.crappycomic.tropichop.main.Main" />
+</jnlp>
