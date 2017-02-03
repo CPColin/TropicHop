@@ -329,10 +329,9 @@ public abstract class View
    
    protected void save(File file) throws IOException
    {
-      ObjectOutputStream out = new ObjectOutputStream(new FileOutputStream(file));
-      
-      out.writeObject(serverModel);
-      out.flush();
-      out.close();
+      try (ObjectOutputStream out = new ObjectOutputStream(new FileOutputStream(file)))
+      {
+         out.writeObject(serverModel);
+      }
    }
 }
